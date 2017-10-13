@@ -81,12 +81,21 @@ var avg = arrayCalc(a: [0]){
     return sum / $0.count
 }
 
+func add (a:[Int], b:[Int]) -> ([Int]) {
+    return [a[0] + b[0], a[1] + b[1]]
+}
 
+func subtract (a:[Int], b:[Int]) -> ([Int]) {
+    return [a[0] - b[0], a[1] - b[1]]
+}
 
+func add (a:Dictionary<String,Int>, b:Dictionary<String,Int>) -> (Dictionary<String,Int>) {
+    return ["x": a["x"]! + b["x"]!, "y": a["y"]! + b["y"]!]
+}
 
-
-
-
+func subtract (a:Dictionary<String,Int>, b:Dictionary<String,Int>) -> (Dictionary<String,Int>) {
+    return ["x": a["x"]! - b["x"]!, "y": a["y"]! - b["y"]!]
+}
 
 
 
